@@ -1,0 +1,8 @@
+---
+title: "Abstract - JSM Data Expo 2018"
+author: "VU Biostat First-Year Group"
+date: "2/1/2018"
+output: html_document
+---
+
+For the 2018 JSM Data Expo, datasets were provided over a span of approximately 3 years and 113 cities to determine the accuracy of forecast data (NWS) when compared to historical data (R package weatherData/Weather Underground). Focusing on the precipitation values, we found that approximately 9% of the historical data has a "trace value", defined to be, "When precipitation [is] detected but isn't sufficient to measure meaningfully" (Weather Underground). We explored different implications of these trace values, including how they correlated with predictive accuracy across cities and regions and how the treatment of trace rain amounts affects the predictive accuracy of forecasts. We then displayed these analyses in R and Shiny to provide visual and contextual support for our analyses.
