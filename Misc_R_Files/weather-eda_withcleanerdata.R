@@ -1,8 +1,10 @@
 library(readr)
 
-l <- read_csv("~/Desktop/R Files/Data Expo 2018/data/locations.csv")
-h <- read_csv("~/Desktop/R Files/Data Expo 2018/kinda-clean-data/historical1.csv"); h <- h[-1]
-f <- readRDS(file="~/Desktop/R Files/Data Expo 2018/kinda-clean-data/forecast1.rds")
+#these are where the datasets are stored in my computer, 
+#may need to change depending on where you store your files
+l <- read_csv("~/Desktop/R Files/Data Expo 2018/VUBiostat-JSM18/Cleaned_Data_Files/locations.csv")
+h <- read_csv("~/Desktop/R Files/Data Expo 2018/VUBiostat-JSM18/Cleaned_Data_Files/historical1.csv"); h <- h[-1]
+f <- readRDS(file="~/Desktop/R Files/Data Expo 2018/VUBiostat-JSM18/Cleaned_Data_Files/forecast_data.rds")
 f[which(f$forecast_variable == "PrecipitationIn"),]$forecast_variable <- "ProbPrecip"
 
 #ideas
