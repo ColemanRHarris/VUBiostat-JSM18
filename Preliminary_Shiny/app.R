@@ -16,18 +16,20 @@ ui <- fluidPage(
 server <- function(input, output) {
    output$plot1 <- renderPlot({
     sub <- hist[which(hist$AirPtCd == locations[which(locations$city==input$city),]$AirPtCd),]
-    if(nrow(sub[which(sub$PrecipitationIn == "T"),])==0){
-      ggplot(data=sub,aes(x=Date,y=PrecipitationIn)) + geom_point() + 
-        scale_y_discrete(breaks=NULL)
-    }
-    else{
-      sub[which(sub$PrecipitationIn == "T"),'Col'] <- "Trace"
-      sub[which(sub$PrecipitationIn != "T"),'Col'] <- "Measured"
-      sub[which(sub$PrecipitationIn == "T"),]$PrecipitationIn <- 0.5
-      ggplot(data=sub,aes(x=Date,y=PrecipitationIn)) + geom_point(aes(color=Col)) + 
-        scale_y_discrete(breaks=NULL)
-    }
+    ggplot(data=sub,aes(x=Date,y=PrecipitationIn)) + geom_point() + 
+      scale_y_discrete(breaks=NULL) + ggtitle("Precipitation Over Time")
+    # if(nrow(sub[which(sub$PrecipitationIn == "T"),])==0){
+    # 
+    # }
+    # else{
+    #   sub[which(sub$PrecipitationIn == "T"),'Col'] <- "Trace"
+    #   sub[which(sub$PrecipitationIn != "T"),'Col'] <- "Measured"
+    #   sub[which(sub$PrecipitationIn == "T"),]$PrecipitationIn <- 0.5
+    #   ggplot(data=sub,aes(x=Date,y=PrecipitationIn)) + geom_point(aes(color=Col)) + 
+    #     scale_y_discrete(breaks=NULL)
+    # }
   })
+   
 }
 
 # Run the application 

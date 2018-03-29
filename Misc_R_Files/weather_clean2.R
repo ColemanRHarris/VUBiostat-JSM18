@@ -3,9 +3,9 @@ library(ggplot2)
 library(ggmap)
 
 #import data
-location <- read_csv("~/Desktop/R Files/Data Expo 2018/data/locations.csv")
-historical <- read_csv("~/Desktop/R Files/Data Expo 2018/data/histWeather.csv")
-forecast <- read.table(file= "~/Desktop/R Files/Data Expo 2018/data/forecast.dat", header = F)
+location <- read_csv("~/Desktop/R Files/Data Expo 2018/Archive/data/locations.csv")
+historical <- read_csv("~/Desktop/R Files/Data Expo 2018/Archive/data/histWeather.csv")
+forecast <- read.table(file= "~/Desktop/R Files/Data Expo 2018/Archive/data/forecast.dat", header = F)
 ##PROB OF PRECIP // NOT IN in. for forecast
 
 #some basic cleanings for forecast data
@@ -17,15 +17,15 @@ forecast$predicted_date <- as.Date(forecast$predicted_date)
 forecast$forecast_variable <- as.character(forecast$forecast_variable)
 forecast[which(forecast$forecast_variable == "MaxTemp"),]$forecast_variable <- "Max_TemperatureF"
 forecast[which(forecast$forecast_variable == "MinTemp"),]$forecast_variable <- "Min_TemperatureF"
-forecast[which(forecast$forecast_variable == "ProbPrecip"),]$forecast_variable <- "PrecipitationIn"
+forecast[which(forecast$forecast_variable == "ProbPrecip"),]$forecast_variable <- "ProbOfPrecip"
 
 #cleanings for hist data
 historical$Date <- as.Date(historical$Date)
 
-saveRDS(forecast, "kinda-clean-data/forecast1.rds")
-write.csv(historical, "kinda-clean-data/historical1.csv")
+saveRDS(forecast, "~/Desktop/R Files/Data Expo 2018/Archive/reclean_march18/forecast1.rds")
+write.csv(historical, "~/Desktop/R Files/Data Expo 2018/Archive/reclean_march18/historical1.csv")
 
-historical <- historical[,c(1,2,4,20,24)]
+#historical <- historical[,c(1,2,4,20,24)]
 
 #residuals function
 get.res <- function(airportcode, hist1, fore1){
