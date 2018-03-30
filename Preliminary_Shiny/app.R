@@ -5,33 +5,29 @@ locations <- read_csv("data/locations.csv")
 fore <- readRDS("data/forecast1.rds")
 hist <- read_csv("data/historical1.csv")
 
-# Define UI for application that draws a histogram
-ui <- fluidPage(
-   titlePanel("Imputation"),
-   sidebarPanel(selectInput("city","Select City:",choices = locations$city)),
-   mainPanel(plotOutput("plot1"))
+
+ui <- fluidPage(  #Define UI for application
+   titlePanel("Happiness Index and Weather Forecasts in U.S. Cities"),
+   sidebarPanel(
+     selectInput("city","Select City:",choices = sort(locations$city)),
+     selectInput("var","Select Variable:",choices = c("Minimum Temperature (F)","Maximum Temperature (F)","Precipitation (in.)")),
+     checkboxGroupInput("days","Days Between Forecast and Recorded Value",
+                        choices = c("0 days","1", "2","3","4","5"))
+     ),
+   mainPanel(
+     tabsetPanel(type="tabs",
+                 tabPanel("US Map"
+                 ),
+                 tabPanel("Visualizations"
+                 ),
+                 tabPanel("Correlation")
+     )
+   )
 )
 
-# Define server logic required to draw a histogram
-server <- function(input, output) {
-   output$plot1 <- renderPlot({
-    sub <- hist[which(hist$AirPtCd == locations[which(locations$city==input$city),]$AirPtCd),]
-    ggplot(data=sub,aes(x=Date,y=PrecipitationIn)) + geom_point() + 
-      scale_y_discrete(breaks=NULL) + ggtitle("Precipitation Over Time")
-    # if(nrow(sub[which(sub$PrecipitationIn == "T"),])==0){
-    # 
-    # }
-    # else{
-    #   sub[which(sub$PrecipitationIn == "T"),'Col'] <- "Trace"
-    #   sub[which(sub$PrecipitationIn != "T"),'Col'] <- "Measured"
-    #   sub[which(sub$PrecipitationIn == "T"),]$PrecipitationIn <- 0.5
-    #   ggplot(data=sub,aes(x=Date,y=PrecipitationIn)) + geom_point(aes(color=Col)) + 
-    #     scale_y_discrete(breaks=NULL)
-    # }
-  })
-   
+server <- function(input, output) {  #Define server for application
+
 }
 
-# Run the application 
-shinyApp(ui = ui, server = server)
+shinyApp(ui = ui, server = server) #runs the application 
 
