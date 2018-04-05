@@ -1,9 +1,13 @@
 library(shiny)
 library(readr)
 library(ggplot2)
-locations <- read_csv("data/locations.csv")
+library(leaflet)
+library(dplyr)
+library(magrittr)
+locations <- read_csv("data/locations_with_index.csv")
 fore <- readRDS("data/forecast1.rds")
 hist <- read_csv("data/historical1.csv")
+qpal <- colorQuantile("Reds", locations$index, n = 3)
 
 
 ui <- fluidPage(  #Define UI for application
@@ -16,9 +20,10 @@ ui <- fluidPage(  #Define UI for application
      ),
    mainPanel(
      tabsetPanel(type="tabs",
-                 tabPanel("US Map"
-                 ),
                  tabPanel("Visualizations"
+                 ),
+                 tabPanel("US Map",
+                  leafletOutput("USmap")
                  ),
                  tabPanel("Correlation")
      )
@@ -26,7 +31,18 @@ ui <- fluidPage(  #Define UI for application
 )
 
 server <- function(input, output) {  #Define server for application
-
+    output$USmap <- renderLeaflet({
+      leaflet() %>% 
+        addTiles() %>% 
+        addCircleMarkers(lat = locations$latitude,lng = locations$longitude,
+                         popup = paste0("<b>",locations$city,", ",locations$state,"</b>","</br>",
+                          "Happ. Index: ",locations$index,"</br>",
+                          "Happ. Ranking: ",locations$X1,"</br>",
+                          "Num. of Tweets: ", locations$tweets),
+                         stroke=F,radius=5,color = qpal(locations$index),
+                         fillOpacity = 0.75) %>%
+        addLegend(colors = unique(qpal(locations$index)),labels=quantile(locations$index)[c(1,3,5)])
+    })
 }
 
 shinyApp(ui = ui, server = server) #runs the application 
