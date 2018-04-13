@@ -1,84 +1,84 @@
-"","city","state","longitude","latitude","AirPtCd","tweets","index"
-"1","Portland","Maine",-70.25,43.6667,"KPWM",9230,6.13
-"2","Boston","Massachusetts",-71.0833,42.35,"KBOS",205827,6.01
-"3","Providence","Rhode Island",-71.4,41.8333,"KPVD",50036,5.99
-"4","Manchester","New Hampshire",-71.5,43,"KMHT",4073,6.09
-"5","Springfield","Massachusetts",-72.5667,42.1,"KCEF",18514,6
-"6","New Haven","Connecticut",-72.9167,41.3167,"KHVN",34054,5.94
-"7","New York","New York",-73.9667,40.7833,"KNYC",910196,6.05
-"8","Atlantic City","New Jersey",-74.4167,39.3667,"KACY",16422,6.04
-"9","Philadelphia","Pennsylvania",-75.1667,39.95,"KPHL",421547,5.93
-"10","Dover","Delaware",-75.5267,39.1619,"KDOV",12155,5.9
-"11","Scranton","Pennsylvania",-75.65,41.4,"KAVP",11567,6.01
-"12","Syracuse","New York",-76.1333,43.0333,"KSYR",17566,6.04
-"13","Baltimore","Maryland",-76.6333,39.3,"KDMH",197122,5.89
-"14","Richmond","Virginia",-77.4833,37.55,"KOFP",63455,5.94
-"15","Wilmington","North Carolina",-77.95,34.2333,"KILM",9772,6.04
-"16","Raleigh","North Carolina",-78.65,35.7667,"KRDU",60469,5.97
-"17","Buffalo","New York",-78.8333,42.9167,"KBUF",42852,6
-"18","Charleston","South Carolina",-79.9333,32.7833,"KCHS",26316,6.02
-"19","Pittsburgh","Pennsylvania",-79.95,40.45,"KAGC",100117,5.97
-"20","Roanoke","Virginia",-79.95,37.2833,"KROA",7491,6.02
-"21","Miami","Florida",-80.2,25.7667,"KMIA",234118,6.06
-"22","Charlotte","North Carolina",-80.8333,35.2333,"KCLT",86473,5.96
-"23","Columbia","South Carolina",-81.0333,34,"KCUB",38431,5.95
-"24","Savannah","Georgia",-81.0833,32.0833,"KSVN",22468,5.93
-"25","Cleveland","Ohio",-81.6167,41.4667,"KBKL",161435,5.91
-"26","Charleston","West Virginia",-81.6333,38.35,"KCRW",8440,5.99
-"27","Jacksonville","Florida",-81.6667,30.3667,"KNIP",44830,6.01
-"28","Tampa","Florida",-82.45,27.95,"KTPA",75449,6.04
-"29","Columbus","Ohio",-83.0167,40,"KOSU",88005,6
-"30","Detroit","Michigan",-83.05,42.3333,"KDET",261689,5.9
-"31","Knoxville","Tennessee",-83.9333,35.95,"KTYS",30790,6.01
-"32","Atlanta","Georgia",-84.3833,33.75,"KATL",405542,5.93
-"33","Cincinnati","Ohio",-84.5,39.1333,"KLUK",65980,6
-"34","Grand Rapids","Michigan",-85.6667,42.9667,"KGRR",22556,6.05
-"35","Indianapolis","Indiana",-86.1667,39.7667,"KEYE",98932,5.97
-"36","Montgomery","Alabama",-86.3,32.35,"KMXF",24451,5.87
-"37","Nashville","Tennessee",-86.7833,36.1667,"KBNA",66709,6.03
-"38","Birmingham","Alabama",-86.8333,33.5,"KBHM",48942,5.95
-"39","Chicago","Illinois",-87.6167,41.8333,"KMDW",405027,5.98
-"40","Milwaukee","Wisconsin",-87.9167,43.0333,"KMKE",97817,5.98
-"41","Mobile","Alabama",-88.05,30.7,"KBFM",17999,5.94
-"42","Springfield","Illinois",-89.6333,39.8,"KSPI",5787,5.93
-"43","Memphis","Tennessee",-90.05,35.15,"KMEM",89699,5.84
-"44","New Orleans","Louisiana",-90.0667,29.95,"KNEW",144553,5.9
-"45","Jackson","Mississippi",-90.2,32.3333,"KHKS",40580,5.88
-"46","Dubuque","Iowa",-90.6667,42.5167,"KDBQ",2042,6.05
-"47","Duluth","Minnesota",-92.0833,46.8167,"KDLH",3920,6.07
-"48","Minneapolis","Minnesota",-93.2333,44.9833,"KMSP",98397,6.05
-"49","Springfield","Missouri",-93.2833,37.2167,"KSGF",9515,6.1
-"50","Des Moines","Iowa",-93.6167,41.5833,"KDSM",19369,6.05
-"51","Shreveport","Louisiana",-93.7,32.4667,"KBAD",43511,5.83
-"52","Kansas City","Missouri",-94.5833,39.1,"KMKC",60154,6.02
-"53","Lincoln","Nebraska",-96.6667,40.8333,"KLNK",8818,6.04
-"54","Sioux Falls","South Dakota",-96.7333,43.55,"KFSD",3332,6.07
-"55","Dallas","Texas",-96.7667,32.7667,"KDAL",249815,5.99
-"56","Fargo","North Dakota",-96.8,46.8667,"KFAR",5156,6.08
-"57","Wichita","Kansas",-97.2833,37.7167,"KAAO",18674,5.99
-"58","Oklahoma City","Oklahoma",-97.4667,35.4333,"KTIK",38350,6.02
-"59","San Antonio","Texas",-98.55,29.3833,"KSKF",68871,6.02
-"60","Bismarck","North Dakota",-100.783,46.8,"KBIS",702,6.13
-"61","Amarillo","Texas",-101.833,35.1833,"KAMA",3065,6.12
-"62","Cheyenne","Wyoming",-104.867,41.15,"KCYS",1279,5.97
-"63","Denver","Colorado",-105,39.75,"KBJC",63460,6.09
-"64","Santa Fe","New Mexico",-105.95,35.6833,"KSAF",1945,6.12
-"65","El Paso","Texas",-106.483,31.7667,"KELP",35681,5.96
-"66","Grand Junction","Colorado",-108.55,39.0833,"KGJT",1094,6.02
-"67","Provo","Utah",-111.6608,40.2444,"KPVU",8886,6.11
-"68","Flagstaff","Arizona",-111.683,35.2167,"KFLG",2653,6.06
-"69","Salt Lake City","Utah",-111.9,40.7667,"KSLC",27334,6.07
-"70","Idaho Falls","Idaho",-112.017,43.5,"KIDA",586,6.21
-"71","Phoenix","Arizona",-112.067,33.4833,"KPHX",114520,6.08
-"72","St. George","Utah",-113.5781,37.0953,"KSGU",1293,6.11
-"73","Boise","Idaho",-116.217,43.6,"KBOI",8182,6.11
-"74","San Diego","California",-117.15,32.72,"KSAN",105448,6.1
-"75","Spokane","Washington",-117.433,47.6667,"KGEG",5660,6.15
-"76","Los Angeles","California",-118.25,34.05,"KCQT",575484,6.07
-"77","Fresno","California",-119.8,36.7333,"KFAT",20653,5.98
-"78","Reno","Nevada",-119.817,39.5,"KRNO",9671,6.05
-"79","Sacramento","California",-121.5,38.5833,"KSAC",60555,6
-"80","Seattle","Washington",-122.333,47.6167,"KBFI",126374,6.08
-"81","San Francisco","California",-122.433,37.7833,"KSFO",211413,6.08
-"82","Portland","Oregon",-122.683,45.5167,"KVUO",67973,6.03
-"83","Eugene","Oregon",-123.083,44.05,"KEUG",7954,6.03
+"","city","state","longitude","latitude","AirPtCd","tweets","index","state_abb"
+"1","Portland","Maine",-70.25,43.6667,"KPWM",9230,6.13,"ME"
+"2","Boston","Massachusetts",-71.0833,42.35,"KBOS",205827,6.01,"MA"
+"3","Providence","Rhode Island",-71.4,41.8333,"KPVD",50036,5.99,"RI"
+"4","Manchester","New Hampshire",-71.5,43,"KMHT",4073,6.09,"NH"
+"5","Springfield","Massachusetts",-72.5667,42.1,"KCEF",18514,6,"MA"
+"6","New Haven","Connecticut",-72.9167,41.3167,"KHVN",34054,5.94,"CT"
+"7","New York","New York",-73.9667,40.7833,"KNYC",910196,6.05,"NY"
+"8","Atlantic City","New Jersey",-74.4167,39.3667,"KACY",16422,6.04,"NJ"
+"9","Philadelphia","Pennsylvania",-75.1667,39.95,"KPHL",421547,5.93,"PA"
+"10","Dover","Delaware",-75.5267,39.1619,"KDOV",12155,5.9,"DE"
+"11","Scranton","Pennsylvania",-75.65,41.4,"KAVP",11567,6.01,"PA"
+"12","Syracuse","New York",-76.1333,43.0333,"KSYR",17566,6.04,"NY"
+"13","Baltimore","Maryland",-76.6333,39.3,"KDMH",197122,5.89,"MD"
+"14","Richmond","Virginia",-77.4833,37.55,"KOFP",63455,5.94,"VA"
+"15","Wilmington","North Carolina",-77.95,34.2333,"KILM",9772,6.04,"NC"
+"16","Raleigh","North Carolina",-78.65,35.7667,"KRDU",60469,5.97,"NC"
+"17","Buffalo","New York",-78.8333,42.9167,"KBUF",42852,6,"NY"
+"18","Charleston","South Carolina",-79.9333,32.7833,"KCHS",26316,6.02,"SC"
+"19","Pittsburgh","Pennsylvania",-79.95,40.45,"KAGC",100117,5.97,"PA"
+"20","Roanoke","Virginia",-79.95,37.2833,"KROA",7491,6.02,"VA"
+"21","Miami","Florida",-80.2,25.7667,"KMIA",234118,6.06,"FL"
+"22","Charlotte","North Carolina",-80.8333,35.2333,"KCLT",86473,5.96,"NC"
+"23","Columbia","South Carolina",-81.0333,34,"KCUB",38431,5.95,"SC"
+"24","Savannah","Georgia",-81.0833,32.0833,"KSVN",22468,5.93,"GA"
+"25","Cleveland","Ohio",-81.6167,41.4667,"KBKL",161435,5.91,"OH"
+"26","Charleston","West Virginia",-81.6333,38.35,"KCRW",8440,5.99,"WV"
+"27","Jacksonville","Florida",-81.6667,30.3667,"KNIP",44830,6.01,"FL"
+"28","Tampa","Florida",-82.45,27.95,"KTPA",75449,6.04,"FL"
+"29","Columbus","Ohio",-83.0167,40,"KOSU",88005,6,"OH"
+"30","Detroit","Michigan",-83.05,42.3333,"KDET",261689,5.9,"MI"
+"31","Knoxville","Tennessee",-83.9333,35.95,"KTYS",30790,6.01,"TN"
+"32","Atlanta","Georgia",-84.3833,33.75,"KATL",405542,5.93,"GA"
+"33","Cincinnati","Ohio",-84.5,39.1333,"KLUK",65980,6,"OH"
+"34","Grand Rapids","Michigan",-85.6667,42.9667,"KGRR",22556,6.05,"MI"
+"35","Indianapolis","Indiana",-86.1667,39.7667,"KEYE",98932,5.97,"IN"
+"36","Montgomery","Alabama",-86.3,32.35,"KMXF",24451,5.87,"AL"
+"37","Nashville","Tennessee",-86.7833,36.1667,"KBNA",66709,6.03,"TN"
+"38","Birmingham","Alabama",-86.8333,33.5,"KBHM",48942,5.95,"AL"
+"39","Chicago","Illinois",-87.6167,41.8333,"KMDW",405027,5.98,"IL"
+"40","Milwaukee","Wisconsin",-87.9167,43.0333,"KMKE",97817,5.98,"WI"
+"41","Mobile","Alabama",-88.05,30.7,"KBFM",17999,5.94,"AL"
+"42","Springfield","Illinois",-89.6333,39.8,"KSPI",5787,5.93,"IL"
+"43","Memphis","Tennessee",-90.05,35.15,"KMEM",89699,5.84,"TN"
+"44","New Orleans","Louisiana",-90.0667,29.95,"KNEW",144553,5.9,"LA"
+"45","Jackson","Mississippi",-90.2,32.3333,"KHKS",40580,5.88,"MS"
+"46","Dubuque","Iowa",-90.6667,42.5167,"KDBQ",2042,6.05,"IA"
+"47","Duluth","Minnesota",-92.0833,46.8167,"KDLH",3920,6.07,"MN"
+"48","Minneapolis","Minnesota",-93.2333,44.9833,"KMSP",98397,6.05,"MN"
+"49","Springfield","Missouri",-93.2833,37.2167,"KSGF",9515,6.1,"MO"
+"50","Des Moines","Iowa",-93.6167,41.5833,"KDSM",19369,6.05,"IA"
+"51","Shreveport","Louisiana",-93.7,32.4667,"KBAD",43511,5.83,"LA"
+"52","Kansas City","Missouri",-94.5833,39.1,"KMKC",60154,6.02,"MO"
+"53","Lincoln","Nebraska",-96.6667,40.8333,"KLNK",8818,6.04,"NE"
+"54","Sioux Falls","South Dakota",-96.7333,43.55,"KFSD",3332,6.07,"SD"
+"55","Dallas","Texas",-96.7667,32.7667,"KDAL",249815,5.99,"TX"
+"56","Fargo","North Dakota",-96.8,46.8667,"KFAR",5156,6.08,"ND"
+"57","Wichita","Kansas",-97.2833,37.7167,"KAAO",18674,5.99,"KS"
+"58","Oklahoma City","Oklahoma",-97.4667,35.4333,"KTIK",38350,6.02,"OK"
+"59","San Antonio","Texas",-98.55,29.3833,"KSKF",68871,6.02,"TX"
+"60","Bismarck","North Dakota",-100.783,46.8,"KBIS",702,6.13,"ND"
+"61","Amarillo","Texas",-101.833,35.1833,"KAMA",3065,6.12,"TX"
+"62","Cheyenne","Wyoming",-104.867,41.15,"KCYS",1279,5.97,"WY"
+"63","Denver","Colorado",-105,39.75,"KBJC",63460,6.09,"CO"
+"64","Santa Fe","New Mexico",-105.95,35.6833,"KSAF",1945,6.12,"NM"
+"65","El Paso","Texas",-106.483,31.7667,"KELP",35681,5.96,"TX"
+"66","Grand Junction","Colorado",-108.55,39.0833,"KGJT",1094,6.02,"CO"
+"67","Provo","Utah",-111.6608,40.2444,"KPVU",8886,6.11,"UT"
+"68","Flagstaff","Arizona",-111.683,35.2167,"KFLG",2653,6.06,"AZ"
+"69","Salt Lake City","Utah",-111.9,40.7667,"KSLC",27334,6.07,"UT"
+"70","Idaho Falls","Idaho",-112.017,43.5,"KIDA",586,6.21,"ID"
+"71","Phoenix","Arizona",-112.067,33.4833,"KPHX",114520,6.08,"AZ"
+"72","St. George","Utah",-113.5781,37.0953,"KSGU",1293,6.11,"UT"
+"73","Boise","Idaho",-116.217,43.6,"KBOI",8182,6.11,"ID"
+"74","San Diego","California",-117.15,32.72,"KSAN",105448,6.1,"CA"
+"75","Spokane","Washington",-117.433,47.6667,"KGEG",5660,6.15,"WA"
+"76","Los Angeles","California",-118.25,34.05,"KCQT",575484,6.07,"CA"
+"77","Fresno","California",-119.8,36.7333,"KFAT",20653,5.98,"CA"
+"78","Reno","Nevada",-119.817,39.5,"KRNO",9671,6.05,"NV"
+"79","Sacramento","California",-121.5,38.5833,"KSAC",60555,6,"CA"
+"80","Seattle","Washington",-122.333,47.6167,"KBFI",126374,6.08,"WA"
+"81","San Francisco","California",-122.433,37.7833,"KSFO",211413,6.08,"CA"
+"82","Portland","Oregon",-122.683,45.5167,"KVUO",67973,6.03,"OR"
+"83","Eugene","Oregon",-123.083,44.05,"KEUG",7954,6.03,"OR"
