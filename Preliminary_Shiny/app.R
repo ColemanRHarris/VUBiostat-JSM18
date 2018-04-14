@@ -44,7 +44,10 @@ server <- function(input, output) {  #Define server for application
       l <- locations[which(stringr::str_detect(input$city,locations$city)),]
       s <- state.abb[which(state.name == substr(input$city,grepRaw(",",input$city)+2,nchar(input$city)))]
       l <- l[which(stringr::str_detect(s,l$state_abb)),]
-      hist[which(hist$AirPtCd == l$AirPtCd),]
+      h <- hist[which(hist$AirPtCd == l$AirPtCd),]
+      h$Max_TemperatureF <- as.numeric(as.character(h$Max_TemperatureF))
+      h$Min_TemperatureF <- as.numeric(as.character(h$Min_TemperatureF))
+      h
     })
 
     subsetFore <- reactive({
@@ -60,10 +63,14 @@ server <- function(input, output) {  #Define server for application
       f <- fore[which(fore$airport_code == l$AirPtCd),]
       # f <- subset(fore,fore$airport_code == locations[which(stringr::str_detect(input$city,locations$city) & stringr::str_detect(input$city,locations$state_abb)),]$AirPtCd)
       f <- subset(f,f$delta_t == as.numeric(input$days) & f$forecast_variable == v)
+      f$predicted_value <- as.numeric(as.character(f$predicted_value))
       f
     })
 
     output$histVals <- renderPlot({
+      if(input$var == "Minimum Temperature (F)"){
+        v <- "Min_TemperatureF"} else if(input$var == "Maximum Temperature (F)"){
+          v <- "Max_TemperatureF"} 
       s <- subsetHist()
       f <- subsetFore()
       plot(0:10,0:10,main=nrow(s))
