@@ -3,22 +3,6 @@ title: "JSM Data Expo - Game Plan"
 output: pdf_document
 urlcolor: blue
 ---
-#Due Dates
-
-##Abstract Opens for Edits: March 29th
-##Abstract Due: April 18th
-##Proof of Work in Progress: May 17th
-
----
-
-#Goals:
-- Get significant work done on Shiny app by **April 4th**
-- Write and submit abstract by **April 18th**
-- Figure out who will present by **April 18th**
-- Get most of this done **before we freak out for Comps**
-
-----
-
 #Some Details
 
 ##Shiny App
